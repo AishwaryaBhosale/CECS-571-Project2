@@ -72,7 +72,7 @@ public class CSVRead {
 				report.setLocation(nextLine[2]);
 				report.setDisposition(nextLine[3]);
 				report.setDipositionText(nextLine[5]);
-				report.setOccuredAt(reportDateformatter.parse(nextLine[6]));
+				report.setOccuredAt(callDateFormatter.parse(nextLine[6]));
 				if (nextLine[9].equals("NULL") && nextLine[10].equals("NULL") && nextLine[11].equals("NULL"))
 					continue;
 				report.setOffenderRace(nextLine[9]);
